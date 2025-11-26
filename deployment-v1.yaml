@@ -5,22 +5,22 @@ metadata:
   namespace: default
   labels:
     app: argoapp
-    version: v1
+    version: v2
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: argoapp
-      version: v1
+      version: v2
   template:
     metadata:
       labels:
         app: argoapp
-        version: v1
+        version: v2
     spec:
       containers:
       - name: argoapp
-        image: abdulp07/argoapp:v1  # Replace with your DockerHub username
+        image: abdulp07/argoapp:v2  # Replace with your DockerHub username
         ports:
         - containerPort: 80
         resources:
