@@ -11,7 +11,6 @@ spec:
   selector:
     matchLabels:
       app: argoapp
-      version: v2
   template:
     metadata:
       labels:
